@@ -1,5 +1,9 @@
 #!/usr/bin/ruby
-require "colorize"
+require 'bundler/inline'
+
+gemfile true do
+  gem 'colorize'
+end
 
 BL = 22 #base length
 length = BL+BL/6+BL/3+BL/6+BL*2 #should be the same as line1 at all times

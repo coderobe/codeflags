@@ -1,5 +1,9 @@
 #!/usr/bin/ruby
-require "colorize"
+require 'bundler/inline'
+
+gemfile true do
+  gem 'colorize'
+end
 
 def b(c,a=1)
   return "▮".colorize(:color => c, :background => c)*a

@@ -1,5 +1,9 @@
 #!/usr/bin/ruby
-require "colorize"
+require 'bundler/inline'
+
+gemfile true do
+  gem 'colorize'
+end
 
 #default base length is 26
 BL = 22 #base length
