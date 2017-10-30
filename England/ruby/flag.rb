@@ -9,12 +9,12 @@ def b(c,a=1)
 end
 
 def tb(size)
-	section_length = size/5
-	10.times do
-		print b(:white, section_length*2)
-		print b(:red, section_length)
-		puts b(:white, section_length*2)
-	end
+  section_length = size/5
+  10.times do
+    print b(:white, section_length*2)
+    print b(:red, section_length)
+    puts b(:white, section_length*2)
+  end
 end
 
 tb(length)
